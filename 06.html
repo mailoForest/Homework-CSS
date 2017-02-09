@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task #6</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        header{
+            background: #9b6600;
+            padding: 1em;
+        }
+        header>p{
+            padding: 1em 1em 3em 1em;
+        }
+        header, nav{
+            color: white;
+        }
+        nav, main, aside{
+            display: table-cell;
+        }
+        nav{
+            background: #58201f;
+            width: 15%;
+            height: 100%;
+        }
+        nav>div{
+            background: #64332f;
+            width: 90%;
+            padding: 2.4375em 0em 2.4375em 0.5em;
+        }
+        li, nav h2{
+            padding: 0.5em;
+        }
+        main{
+            background: #ffffcd;
+            width: 70%;
+            padding: 1em;
+        }
+        main>*{
+            padding: 1em;
+        }
+        aside{
+            background: #87874b;
+            width: 15%;
+            height: 100%;
+        }
+        aside>p{
+            background: #999766;
+            padding: 3.375em 1em;
+            text-align: right;
+            font-weight: bolder;
+            font-family: cursive;
+        }
+        footer{
+            background: #666365;
+            padding: 1em;
+            text-align: center;
+            margin-right: 13%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>3col Fixed Header</h1>
+            <p>Exercise uses one graphic with 3 color positioned in the proper pixel position.
+                Doesn't allow any of the widths to change. <br> See color note in the content section.</p>
+        </header>
+        <div id="content">
+            <nav>
+                <div>
+                    <h2>This is the navigation</h2>
+                    <ul>
+                        <li>CHECK</li>
+                        <li>OUT</li>
+                        <li>MY</li>
+                        <li>NOTES</li>
+                    </ul>
+                </div>
+            </nav>
+            <main>
+                <h3>CONTENT: notes on this 3col Fixed assignment</h3>
+                <p>As in column exercise, the color change is detectable where the div meets the .jpg background. I used the
+                    same number in the PS doc as was used in the HTML?</p>
+                <p>The exercise uses a main wrapper background image as one fixed strip. I get serious Flat Drop when I
+                    resize (reduce) the browser window. I think that that is what "display: inline;/" stops IE doubling
+                    margin on float is for, but would like further explanation to understand this comment</p>
+                <p>Is keeping the #wrapper div necessary in a stylesheet if there is also going to be separate version
+                    wrappers as we have here to contain the different background images? Or perhaps this an example of an
+                    inner div as the book suggest? I am still confused on that detail.</p>
+                <p>Even though I have auto margin sets on the wrapper div, the page still hugs the left side? I've tried it
+                    in all of them, but it won't budge?</p>
+                <p>Obviously this footer has a mind of it's own...
+                    it's in the wrapper, but the "clear" seems to be allowing it outside. However, when I remove the clear, it hugs the bottom of the header?</p>
+            </main>
+            <aside>
+                <p>This is the failed right side</p>
+            </aside>
+        </div>
+        <footer><br>&copy;2016 Kaloyan not so great at styling in many cases, still learning CSS though</footer>
+    </div>
+</body>
+</html>
