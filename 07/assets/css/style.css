@@ -114,4 +114,7 @@ label{
     border: 1px solid gray;
     width: 1.5em;
 }
-
+audio{
+    opacity: 0.5;
+    display: inline;
+}
